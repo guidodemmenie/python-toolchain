@@ -1,4 +1,4 @@
-# python-toolchain
+# robotframework-toolchain
 
 ## homebrew
 
@@ -76,6 +76,47 @@ Continue working on a project
 
 Removing virtual environment
 ``` bash
-% deactivate
+(venv) % deactivate
 % rmvirtualenv rf-test-project
+```
+
+## Robotframework
+Install Robotframework
+``` bash
+(venv) % pip install robotframework
+```
+
+## Browserlibrary
+
+Install NodeJS
+``` bash
+% brew node
+```
+
+Install Browser library
+``` bash
+(venv) % pip install robotframework-browser
+```
+
+Initialize the Browser library:
+``` bash
+% rfbrowser init 
+```
+
+
+## Visual Studio Code
+
+Install VSC
+``` bash
+% brew install --cask visual-studio-code
+```
+
+Install mandatory extensions
+``` bash
+% code --install-extensions robocorp.robotframework-lsp
+```
+
+Install optional extensions
+``` bash
+% tobe filled
 ```
