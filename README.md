@@ -80,6 +80,27 @@ Removing virtual environment
 % rmvirtualenv rf-test-project
 ```
 
+Add Aliases for mk-/rmvirtualenv to `~/.zshrc`
+``` bash
+# Adding aliases for mk-/rmvirtualenv so it uses the current dir:
+mkvenv() {
+ mkvirtualenv $(basename $(pwd))
+}
+
+rmvenv() {
+  rmvirtualenv $(basename $(pwd))
+}
+```
+
+Workflow changes to:
+``` bash
+~/src/rf-test-project % mkvenv
+~/src/rf-test-project % workon .
+(rf-test-project) % deactivate
+...
+~/src/rf-test-project % rmvenv
+```
+
 ## Robotframework
 Install Robotframework
 ``` bash
