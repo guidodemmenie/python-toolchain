@@ -29,7 +29,9 @@ Add dependancies for building python from source as pyenv does:
 $ brew install openssl readline sqlite3 xz zlib
 ```
 
-## virtualenvmapper
+## venv
+
+[python -m venv](https://docs.python.org/3/library/venv.html)
 
 ``` bash
 $ pyenv global 3.10.6
@@ -38,68 +40,29 @@ Python 3.10.6
 $ $(pyenv which python3) -m pip install virtualenvwrapper
 ```
 
-Add to `~/.zshrc` the following lines
-``` bash
-########
-# Virtualenvmapper
-########
-# Setting for virtualenvmapper 
-# ()
-# We want to regularly go to our virtual environment directory
-export WORKON_HOME=~/.virtualenvs
-# If in a given virtual environment, make a virtual environment directory
-# If one does not already exist
-mkdir -p $WORKON_HOME
-# Activate the new virtual environment by calling this script
-# Note that $USER will substitute for your current user
-. ~/.pyenv/versions/3.10.6/bin/virtualenvwrapper.sh
-```
-
 ### Workflow
 
 New project
 ``` bash
 ~/src % mkdir rf-test-project
 ~/src % cd rf-test-project
-~/src/rf-test-project % workon
-~/src/rf-test-project % mkvirtualenv $(basename $(pwd))
-created virtual environment CPython3.10.6.final.0-64 in 139ms
-(rf-test-project) ~/src/rf-test-project % workon
-rf-test-project
-```
+~/src/rf-test-project % python -m venv .venv
+~/src/rf-test-project % source .venv/bin/activate
+(.venv) ~/src/rf-test-project %
+``` 
 
 Continue working on a project
 ``` bash
-~/src/rf-test-project % workon .
-(rf-test-project) ~/src/rf-test-project %
+~/src/rf-test-project % source .venv/bin/activate
+(.venv) ~/src/rf-test-project %
 ```
 
 Removing virtual environment
 ``` bash
 (venv) % deactivate
-% rmvirtualenv rf-test-project
+% rmdir -df .venv
 ```
 
-Add Aliases for mk-/rmvirtualenv to `~/.zshrc`
-``` bash
-# Adding aliases for mk-/rmvirtualenv so it uses the current dir:
-mkvenv() {
- mkvirtualenv $(basename $(pwd))
-}
-
-rmvenv() {
-  rmvirtualenv $(basename $(pwd))
-}
-```
-
-Workflow changes to:
-``` bash
-~/src/rf-test-project % mkvenv
-~/src/rf-test-project % workon .
-(rf-test-project) % deactivate
-...
-~/src/rf-test-project % rmvenv
-```
 
 ## Robotframework
 Install Robotframework
@@ -141,3 +104,6 @@ Install optional extensions
 ``` bash
 % tobe filled
 ```
+
+Using venvs in VSCode
+* Todo -> installing python plugin and making sure it opens your venv automagically
