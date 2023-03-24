@@ -37,7 +37,6 @@ $ brew install openssl readline sqlite3 xz zlib
 $ pyenv global 3.10.6
 $ $(pyenv which python3) -V
 Python 3.10.6
-$ $(pyenv which python3) -m pip install virtualenvwrapper
 ```
 
 ### Workflow
