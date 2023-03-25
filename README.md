@@ -45,7 +45,7 @@ It will guide you through the process and after some time you'll get the message
 % brew install pyenv
 ```
 
-2. Set up your shell environment for Pyenv by running following code in the terminal [[3]](https://github.com/pyenv/pyenv#set-up-your-shell-environment-for-pyenv) 
+2. Set up your shell environment for `pyenv` by running following code in the terminal [[3]](https://github.com/pyenv/pyenv#set-up-your-shell-environment-for-pyenv) 
 
 ``` sh
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
