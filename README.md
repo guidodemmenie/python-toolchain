@@ -108,7 +108,7 @@ So now we have a working new version of python that is up to date and which we c
 
 ## Robot Framework
 
-We can use the python packagem management system `pip` to install Robot Framework.
+We can use the python package management system `pip` to install Robot Framework.
 
 1. Install Robotframework
 ``` sh
