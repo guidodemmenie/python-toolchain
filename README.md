@@ -37,7 +37,7 @@ It will guide you through the process and after some time you'll get the message
 
 ## pyenv
 
-`pyenv` can manage multiple versions of python next to each other, but for now just one is enough.
+`pyenv` can manage multiple versions of python next to each other.
 
 1. To install pyenv:
 
@@ -62,6 +62,9 @@ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 4. Open a new terminal window and check the installed versions of Python, it will look something like this
 ``` sh
 % pyenv versions
+```
+
+``` sh
   system
   3.8.13
 ```
@@ -69,6 +72,9 @@ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 5. Install a recent version of python
 ``` sh
 % pyenv install 3.11
+```
+
+``` sh
 Downloading Python-3.11.2.tar.xz...
 -> https://www.python.org/ftp/python/3.11.2/Python-3.11.2.tar.xz
 Installing Python-3.11.2...
@@ -79,6 +85,9 @@ Installed Python-3.11.2 to /Users/myuser/.pyenv/versions/3.11.2
 6. Verify that the version is installed
 ``` sh
 % pyenv versions
+```
+
+``` sh
   system
   3.8.13
   3.11.2
@@ -92,6 +101,9 @@ Installed Python-3.11.2 to /Users/myuser/.pyenv/versions/3.11.2
 8. Check if the new version is now active
 ``` sh
 % pyenv versions
+```
+
+``` sh
   system
   3.8.13
 * 3.11.2 (set by /Users/myuser/.pyenv/version)
@@ -101,6 +113,9 @@ Installed Python-3.11.2 to /Users/myuser/.pyenv/versions/3.11.2
 
 ``` sh
 % python --version
+```
+
+``` sh
 Python 3.11.2
 ```
 
@@ -113,6 +128,9 @@ We can use the python package management system `pip` to install Robot Framework
 1. Install Robotframework
 ``` sh
 % pip install robotframework
+```
+
+``` sh
 Collecting robotframework
   Using cached robotframework-6.0.2-py3-none-any.whl (658 kB)
 Installing collected packages: robotframework
@@ -122,6 +140,9 @@ Successfully installed robotframework-6.0.2
 2. Check if robot framework is correctly installed.
 ``` sh
 % robot --version
+```
+
+``` sh
 Robot Framework 6.0.2 (Python 3.11.2 on darwin)
 ```
 
