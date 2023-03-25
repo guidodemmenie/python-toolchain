@@ -135,9 +135,10 @@ Visual Studio Code can be installed
 ```
 
 Install extensions for Robot Framework
-* from VSCode you can search for `robotframework-lsp` or
+* from VSCode use `cmd+shift+X` and search for `robotframework-lsp` or
 * from the terminal
 ``` sh
 % code --install-extensions robocorp.robotframework-lsp
 ```
 
+## Happy Testing!
