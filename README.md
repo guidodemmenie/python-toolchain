@@ -20,7 +20,7 @@ Homebrew is a package management system with which you can install all kinds of 
 To install `brew` first install de CLT from xcode by running from the terminal [[1]](https://docs.brew.sh/Installation#macos-requirements)
 
 ```sh
-% xcode-select --install
+xcode-select --install
 ```
 
 Then to install `brew` itself [[2]](https://brew.sh)
@@ -42,7 +42,7 @@ It will guide you through the process and after some time you'll get the message
 1. To install pyenv:
 
 ``` 
-% brew install pyenv
+brew install pyenv
 ```
 
 2. Set up your shell environment for `pyenv` by running following code in the terminal [[3]](https://github.com/pyenv/pyenv#set-up-your-shell-environment-for-pyenv) 
@@ -56,12 +56,12 @@ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 
 3. Add dependencies for building python from source as pyenv does:
 ``` bash
-% brew install openssl readline sqlite3 xz zlib
+brew install openssl readline sqlite3 xz zlib
 ```
 
 4. Open a new terminal window and check the installed versions of Python, it will look something like this
 ``` sh
-% pyenv versions
+pyenv versions
 ```
 
 ``` sh
@@ -71,7 +71,7 @@ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 
 5. Install a recent version of python
 ``` sh
-% pyenv install 3.11
+pyenv install 3.11
 ```
 
 ``` sh
@@ -84,7 +84,7 @@ Installed Python-3.11.2 to /Users/myuser/.pyenv/versions/3.11.2
 
 6. Verify that the version is installed
 ``` sh
-% pyenv versions
+pyenv versions
 ```
 
 ``` sh
@@ -95,12 +95,12 @@ Installed Python-3.11.2 to /Users/myuser/.pyenv/versions/3.11.2
 
 7. Set the version as the python to be used
 ``` sh
-% pyenv global 3.11.2
+pyenv global 3.11.2
 ```
 
 8. Check if the new version is now active
 ``` sh
-% pyenv versions
+pyenv versions
 ```
 
 ``` sh
@@ -112,7 +112,7 @@ Installed Python-3.11.2 to /Users/myuser/.pyenv/versions/3.11.2
 9. Check if the new version of python is active
 
 ``` sh
-% python --version
+python --version
 ```
 
 ``` sh
@@ -127,7 +127,7 @@ We can use the python package management system `pip` to install Robot Framework
 
 1. Install Robotframework
 ``` sh
-% pip install robotframework
+pip install robotframework
 ```
 
 ``` sh
@@ -139,7 +139,7 @@ Successfully installed robotframework-6.0.2
 
 2. Check if robot framework is correctly installed.
 ``` sh
-% robot --version
+robot --version
 ```
 
 ``` sh
@@ -152,14 +152,14 @@ Visual Studio Code can be installed
 1. through the installer from https://code.visualstudio.com or
 2. through `brew` 
 ``` sh
-% brew install --cask visual-studio-code
+brew install --cask visual-studio-code
 ```
 
 Install extensions for Robot Framework
 * from VSCode use `cmd+shift+X` and search for `robotframework-lsp` or
 * from the terminal
 ``` sh
-% code --install-extensions robocorp.robotframework-lsp
+code --install-extensions robocorp.robotframework-lsp
 ```
 
 ## Happy Testing!
