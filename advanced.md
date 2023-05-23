@@ -42,15 +42,15 @@ Todo: VSCode steps to make this work.
 
 Install NodeJS
 ``` bash
-% brew node
+brew install node
 ```
 
 Install Browser library
 ``` bash
-(venv) % pip install robotframework-browser
+pip install robotframework-browser
 ```
 
 Initialize the Browser library:
 ``` bash
-% rfbrowser init 
+rfbrowser init 
 ```
