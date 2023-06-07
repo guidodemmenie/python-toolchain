@@ -26,7 +26,7 @@ xcode-select --install
 Then to install `brew` itself [[2]](https://brew.sh)
 
 ``` sh
-% /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 It will guide you through the process and after some time you'll get the message:
