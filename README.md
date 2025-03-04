@@ -132,9 +132,9 @@ pip install robotframework
 
 ``` sh
 Collecting robotframework
-  Using cached robotframework-6.0.2-py3-none-any.whl (658 kB)
+  Using cached robotframework-7.2.2-py3-none-any.whl (658 kB)
 Installing collected packages: robotframework
-Successfully installed robotframework-6.0.2
+Successfully installed robotframework-7.2.2
 ```
 
 2. Check if robot framework is correctly installed.
@@ -143,7 +143,7 @@ robot --version
 ```
 
 ``` sh
-Robot Framework 6.0.2 (Python 3.11.2 on darwin)
+Robot Framework 7.2.2 (Python 3.11.2 on darwin)
 ```
 
 ## Visual Studio Code
