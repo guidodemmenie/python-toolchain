@@ -11,7 +11,7 @@ So to get started with Robot Framework on a Mac you need the following tools:
 * [Homebrew](https://brew.sh) - The Missing Package Manager for macOS (or Linux)
 * [pyenv](https://github.com/pyenv/pyenv) - Simple Python version management
 * [Visual Studio Code]() - IDE
-    * robocorp.robotframework-lsp
+    * d-biehl.robotcode
 
 ## Homebrew
 
@@ -159,7 +159,7 @@ Install extensions for Robot Framework
 * from VSCode use `cmd+shift+X` and search for `robotframework-lsp` or
 * from the terminal
 ``` sh
-code --install-extensions robocorp.robotframework-lsp
+code --install-extensions d-biehl.robotcode
 ```
 
 ## Happy Testing!
