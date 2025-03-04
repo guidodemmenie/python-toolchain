@@ -156,7 +156,7 @@ brew install --cask visual-studio-code
 ```
 
 Install extensions for Robot Framework
-* from VSCode use `cmd+shift+X` and search for `robotframework-lsp` or
+* from VSCode use `cmd+shift+X` and search for `robotcode` or
 * from the terminal
 ``` sh
 code --install-extensions d-biehl.robotcode
